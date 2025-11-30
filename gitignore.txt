@@ -1,12 +1,32 @@
 # Node.js / Next.js
 node_modules/
-.next/
-# Ignore environment variable files
-.env
-.DS_Store
+error_log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+vendor
+
+# Environment Files and Python
+.env
+.coverage
+.next/
+venv/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+__pycache__/
+tmp/
+private/
+
+# Machine Learning / PyTorch
+out-*/
+out*/
+*.pt
+*.pth
+*.ckpt
+.ipynb_checkpoints/
+wandb/
+runs/
 
 # Go
 *.exe
@@ -18,12 +38,59 @@ yarn-error.log*
 *.out
 
 # Mac system files
+Thumbs.db
+htmlcov/
+db.sqlite3
+instance/
+bin/
+.DS_Store?
 .DS_Store
+.Spotlight-V100
+.Trashes
+._*
 
-# Logs
+# Logs and Misc
 logs
 *.log
-
-# Misc
 .idea/
-.vscode/ 
+.vscode/
+
+# Wordpress
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/backup*/
+wp-content/backups/
+wp-content/upgrade/
+wp-admin/
+wp-includes/
+
+#Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+*.tfvars*
+*.tfvars.json
+
+# Database dumps and data
+*.sql
+*.sql.gz
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.db
+*.tar.gz
+
+# Sensitive credentials
+database/login.txt
+database/cPanel.txt
+
+# Extracted data (can be regenerated)
+database/bali_spas.csv
+output/*.tsv
+
+# Drupal-specific ignores
+sites/default/files/
+sites/default/settings.php
+sites/default/settings.local.php
