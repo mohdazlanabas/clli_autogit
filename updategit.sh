@@ -45,8 +45,8 @@ fi
 echo "➕ Adding all changes..."
 git add .
 
-# Use fixed commit message
-COMMIT_MSG="This Update Automatically From zsh Script."
+# Use dynamic commit message with timestamp
+COMMIT_MSG="Committed From Zsh At $(date '+%I:%M %p, %A, %B %d, %Y')"
 
 # Commit changes
 echo "💾 Committing changes with message: '$COMMIT_MSG'"
